@@ -1,0 +1,16 @@
+.Login{
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register{
+    text-align: center;
+}
+
+.Login .btn{
+    background: var(--gradientColor);
+    font-weight: bold;
+}

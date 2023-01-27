@@ -1,0 +1,20 @@
+.Register{
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login{
+    text-align: center;
+}
+
+.Register .btn{
+    background: var(--gradientColor);
+    font-weight: bold;
+}
+
+.Register .btn:hover {
+    background: var(--SecondaryColor);
+}

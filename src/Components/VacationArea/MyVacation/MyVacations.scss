@@ -1,0 +1,116 @@
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDream: hsl(0, 0%, 93%);
+    --grayText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 225);
+}
+
+@media screen and (max-width: 2000px) {
+    .vacationList {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-row-gap: 350px;
+    }
+
+    .homeDiv {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 1430px) {
+    .vacationList {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-row-gap: 350px;
+    }
+
+}
+
+@media screen and (max-width: 1070px) {
+    .vacationList {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-row-gap: 350px;
+    }
+
+}
+
+@media screen and (max-width:740px) {
+    .vacationList {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(13, 1fr);
+        grid-row-gap: 350px;
+    }
+
+}
+
+.vacationList {
+    margin-left: 125px;
+}
+
+.smallText {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--blackColor);
+}
+
+.paginationDiv {
+    display: inline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    button {
+        background: var(--gradientColor);
+        font-weight: bold;
+        width: 40px;
+        height: 25px;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+    button.active {
+        color: aliceblue;
+        font-weight: bold;
+        width: 40px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: var(--SecondaryColor);
+    }
+}
+
+.FilterButton {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.radio-btn-container {
+    display: flex;
+}
+
+.radio-btn {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    background: var(--gradientColor);
+}
+
+.radio-btn:hover {
+    background: var(--SecondaryColor);
+}

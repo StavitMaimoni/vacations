@@ -1,0 +1,203 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDream: hsl(0, 0%, 93%);
+  --grayText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+  --cardHover: rgb(255, 255, 255);
+}
+
+.main {
+  width: 340px;
+  height: 50px;
+}
+.main .secContent {
+  justify-content: center;
+}
+.main .singleDestination {
+  height: 100%;
+  display: grid;
+  border-radius: 10px;
+  align-items: center;
+  background: linear-gradient(to right, hsl(210deg, 79%, 78%), rgb(39, 111, 114));
+  box-shadow: o 2px 4px rgba(140, 140, 141, 0.549);
+  overflow: hidden;
+}
+.main .singleDestination:hover {
+  background: var(--cardHover);
+  box-shadow: 1 4px 4px rgba(85, 85, 114, 0.549);
+  transition: 0.3s ease;
+}
+.main .singleDestination .imgDiv {
+  height: 150px;
+  width: 100%;
+  overflow: hidden;
+}
+.main .singleDestination .imgDiv img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 2s ease;
+}
+.main .singleDestination .imgDiv:hover img {
+  transform: scale(1.1);
+}
+.main .singleDestination .cardInfo {
+  padding: 0px 15px 15px 15px;
+}
+.main .singleDestination .cardInfo .destTitle {
+  color: var(--blackColor);
+}
+.main .singleDestination .cardInfo .icon {
+  height: 16px;
+}
+.main .singleDestination .cardInfo .grade {
+  margin-left: 200px;
+  position: relative;
+  margin-top: -35px;
+}
+.main .singleDestination .cardInfo .grade .followCount {
+  color: var(--textColor);
+  background: var(--gradientColor);
+  border-radius: 1rem;
+  color: var(--whiteColor);
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.main .singleDestination .cardInfo .grade .followCount .like {
+  font-size: 17px;
+}
+.main .singleDestination .cardInfo .continent .icon {
+  color: var(--textColor);
+  font-size: 18px;
+}
+.main .singleDestination .cardInfo .continent .name {
+  color: var(--textColor);
+  font-weight: 400;
+  font-size: 14px;
+}
+.main .singleDestination .cardInfo .price {
+  color: var(--blackColor);
+  margin-top: -27px;
+  font-size: 1.2rem;
+}
+.main .singleDestination .cardInfo .fees {
+  width: 70%;
+  border-bottom: 1.5px solid var(--grayText);
+  position: absolute;
+  margin-top: -25px;
+}
+.main .singleDestination .cardInfo .desc {
+  font-size: 13.5px;
+  color: var(--textColor);
+  font-weight: 500;
+  margin-top: -15px;
+}
+.main .singleDestination .cardInfo button {
+  margin-top: 1rem;
+  font-weight: 600;
+  justify-content: space-between;
+  gap: 0.5rem;
+  background-color: hsl(199deg, 100%, 33%);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1.5rem;
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.main .singleDestination .cardInfo button .icon {
+  align-self: center;
+  font-size: 18px;
+}
+.main .singleDestination .cardInfo button:hover {
+  background: var(--SecondaryColor);
+}
+.main .singleDestination .cardInfo .follow {
+  margin-top: 1rem;
+  font-weight: 600;
+  justify-content: space-between;
+  gap: 0.5rem;
+  background-color: salmon;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1.5rem;
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.main .singleDestination .cardInfo .follow .icon {
+  align-self: center;
+  font-size: 18px;
+}
+.main .singleDestination .cardInfo .follow:hover {
+  background: var(--SecondaryColor);
+}
+.main .singleDestination .cardInfo .adminIcon {
+  margin-left: 195px;
+  display: block;
+}
+.main .singleDestination .cardInfo .trash {
+  position: relative;
+  display: inline-block;
+}
+.main .singleDestination .cardInfo .trash .trashText {
+  visibility: hidden;
+  width: 100px;
+  height: 50px;
+  background-color: rgb(14, 123, 154);
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  margin-left: -140px;
+  margin-top: -10px;
+}
+.main .singleDestination .cardInfo .trash:hover .trashText {
+  visibility: visible;
+}
+.main .singleDestination .cardInfo .adminNav {
+  color: var(--blackColor);
+}
+.main .singleDestination .cardInfo .adminNav:hover {
+  background: var(--gradientColor);
+  border-radius: 30%;
+  color: white;
+}
+.main .singleDestination .cardInfo .edit {
+  position: relative;
+  display: inline-block;
+}
+.main .singleDestination .cardInfo .edit .editText {
+  visibility: hidden;
+  width: 80px;
+  height: 50px;
+  background-color: rgb(14, 123, 154);
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  margin-left: -140px;
+  margin-top: -10px;
+}
+.main .singleDestination .cardInfo .edit:hover .editText {
+  visibility: visible;
+}/*# sourceMappingURL=VacationCard.css.map */

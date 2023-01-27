@@ -1,0 +1,37 @@
+@media screen and (max-width: 2000px) {
+    .BarChart {
+        margin-left: 220px;
+        margin-top: 100px;
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 1430px) {
+    .BarChart {
+        margin-left: -70px;
+        margin-top: 100px;
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .BarChart {
+        margin-left: -80px;
+        margin-top: 100px;
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (max-width:740px) {
+    .BarChart {
+        margin-left: -80px;
+        margin-top: 100px;
+        margin-bottom: 70px;
+    }
+}
+
+.Header {
+    font-size: 50px;
+    color:hsl(201, 33%, 16%);
+    margin-left: 500px;
+}

@@ -1,0 +1,63 @@
+.AuthMenu {
+    position: relative;
+    margin: auto;
+}
+
+.NavLink {
+    padding: 20px;
+    display: flex;
+    display: inline;
+    padding: 0 1rem;
+    gap: 1rem;
+    font-weight: bold;
+    color: var(--blackColor);
+}
+
+@media screen and (max-width: 2000px) {
+    .NavLink {
+        font-size: 25px;
+        padding: 0 2.5rem;
+    }
+
+    .AuthSpan {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1430px) {
+    .NavLink {
+        font-size: 20px;
+        padding: 0 1.5rem;
+    }
+
+    .AuthSpan {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1070px) {
+    
+    .AuthSpan {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:740px) {
+    .NavLink {
+        font-size: 25px;
+        padding: 0 1rem;
+    }
+    .AuthSpan {
+        font-size: 20px;
+    }
+
+}
+
+.NavLink:hover {
+    background: var(--gradientColor);
+    height: 100%;
+    width: 100%;
+    border-radius: 30%;
+    color: white;
+}

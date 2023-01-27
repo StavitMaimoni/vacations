@@ -1,0 +1,20 @@
+@media screen and (max-width: 2000px) {
+  .TopPage {
+    margin-top: -3500px;
+  }
+}
+@media screen and (max-width: 1430px) {
+  .TopPage {
+    margin-top: -3800px;
+  }
+}
+@media screen and (max-width: 1070px) {
+  .TopPage {
+    margin-top: -5500px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .TopPage {
+    margin-top: -11000px;
+  }
+}/*# sourceMappingURL=Pagination.css.map */

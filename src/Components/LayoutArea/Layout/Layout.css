@@ -1,0 +1,18 @@
+.Layout {
+  height: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 95% 2.5% 2.5%;
+}
+
+header {
+  grid-row: span 1;
+}
+
+footer {
+  grid-row: span 1;
+}
+
+main {
+  grid-row: span 8;
+}/*# sourceMappingURL=Layout.css.map */

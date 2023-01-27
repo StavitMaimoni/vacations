@@ -1,0 +1,13 @@
+.AddVacation .btn {
+  background: var(--gradientColor);
+  font-weight: bold;
+}
+
+.AddVacation .btn:hover {
+  background: var(--SecondaryColor);
+}
+
+.preloadImg {
+  width: 150px;
+  height: 150px;
+}/*# sourceMappingURL=AddVacation.css.map */
